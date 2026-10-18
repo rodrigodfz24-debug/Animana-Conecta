@@ -1,0 +1,6 @@
+{
+  "name": "Animaná Turismo",
+  "description": "Portal turístico de la localidad de Animaná, Salta, Argentina. Encontrá gastronomía, bodegas, artesanos, hospedajes, actividades y noticias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

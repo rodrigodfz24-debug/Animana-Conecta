@@ -1,0 +1,234 @@
+{
+  "entities": {
+    "gastronomy": {
+      "title": "Gastronomía",
+      "description": "Establecimientos gastronómicos de Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "email": { "type": "string" },
+        "socialNetworks": {
+          "type": "object",
+          "properties": {
+            "instagram": { "type": "string" },
+            "facebook": { "type": "string" },
+            "website": { "type": "string" }
+          }
+        },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "hours": { "type": "string" },
+        "priceRange": { "type": "string" },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "createdBy": { "type": "string" }
+      },
+      "required": ["name", "category", "description", "status"]
+    },
+    "accommodations": {
+      "title": "Hospedajes",
+      "description": "Alojamientos y hospedajes en Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "email": { "type": "string" },
+        "socialNetworks": {
+          "type": "object",
+          "properties": {
+            "instagram": { "type": "string" },
+            "facebook": { "type": "string" },
+            "website": { "type": "string" }
+          }
+        },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "hours": { "type": "string" },
+        "price": { "type": "string" },
+        "capacity": { "type": "string" },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "createdBy": { "type": "string" }
+      },
+      "required": ["name", "category", "description", "status"]
+    },
+    "artisans": {
+      "title": "Artesanos",
+      "description": "Artesanos y emprendimientos artesanales de Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "specialty": { "type": "string" },
+        "productsText": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "socialNetworks": {
+          "type": "object",
+          "properties": {
+            "instagram": { "type": "string" },
+            "facebook": { "type": "string" }
+          }
+        },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "hours": { "type": "string" },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "category", "description", "status"]
+    },
+    "wineries": {
+      "title": "Bodegas",
+      "description": "Bodegas y proyectos vitivinícolas de Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "visitType": { "type": "string" },
+        "tastings": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "socialNetworks": {
+          "type": "object",
+          "properties": {
+            "instagram": { "type": "string" },
+            "facebook": { "type": "string" },
+            "website": { "type": "string" }
+          }
+        },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "hours": { "type": "string" },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "description", "status"]
+    },
+    "events": {
+      "title": "Eventos y Actividades",
+      "description": "Próximas actividades y eventos en Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "location": { "type": "string" },
+        "additionalInfo": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "status": { "type": "string", "enum": ["published", "draft", "finished"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "category", "description", "status"]
+    },
+    "news": {
+      "title": "Noticias",
+      "description": "Noticias y novedades de Animaná",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "content": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "publishDate": { "type": "string" },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "content", "status"]
+    },
+    "touristPlaces": {
+      "title": "Lugares Turísticos",
+      "description": "Atractivos y lugares de interés de Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "description", "status"]
+    },
+    "businesses": {
+      "title": "Negocios y Comercios",
+      "description": "Tiendas, verdulerías, kioskos, gimnasios y negocios locales de Animaná",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "email": { "type": "string" },
+        "hours": { "type": "string" },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "status": { "type": "string", "enum": ["published", "draft", "hidden"] },
+        "isFeatured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "category", "description", "status"]
+    },
+    "settings": {
+      "title": "Configuración General",
+      "description": "Ajustes de contacto, redes sociales e historia",
+      "type": "object",
+      "properties": {
+        "siteTitle": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "contactWhatsapp": { "type": "string" },
+        "contactEmail": { "type": "string" },
+        "instagramUrl": { "type": "string" },
+        "facebookUrl": { "type": "string" },
+        "youtubeUrl": { "type": "string" },
+        "historyText": { "type": "string" },
+        "cultureText": { "type": "string" },
+        "traditionsText": { "type": "string" },
+        "recommendationsText": { "type": "string" }
+      }
+    }
+  }
+}
